@@ -1,30 +1,24 @@
-import Image from 'next/image';
-import React from 'react';
 
-const Hero = () => {
+import { Button } from "@/components/ui/button"
+
+
+export default function Hero() {
   return (
-    <div className='max-w-[1640px] mx-auto p-4 mt-[45px]'>
-      <div className='max-h-[500px] relative'>
-        {/* Overlay */}
-        <div className='absolute w-full h-full text-gray-200 max-h-[500px] bg-black/40 flex flex-col justify-center'>
-          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>
-            The <span className='text-orange-500'>Best</span>
-          </h1>
-          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>
-            {' '}
-            <span className='text-orange-500'>Foodys</span> Delivered
-          </h1>
-        </div>
-        <Image
-          src='/burger.svg'
-          alt='pexels-daniel-reche-718241-3616956'
-          layout='fill'
-                  objectFit='cover'
-                
-        />
-      </div>
-    </div>
-  );
-};
-
-export default Hero;
+    
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  Welcome to Kenki Haven
+                </h1>
+                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+                  Experience culinary excellence in the heart of the city. Our chef-crafted menu brings you the finest flavors from around the world.
+                </p>
+              </div>
+              <div className="space-x-4">
+                <Button>Book a Table</Button>
+                <Button variant="outline">View Menu</Button>
+              </div>
+            </div>
+         
+  )
+}

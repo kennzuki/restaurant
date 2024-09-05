@@ -1,12 +1,12 @@
 
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { MenuIcon } from "lucide-react"
 
 export default function RestaurantLanding() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col gap-12">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <span className="sr-only">kenki Haven</span>
