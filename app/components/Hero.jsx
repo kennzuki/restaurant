@@ -16,7 +16,7 @@ export default function Hero() {
               </div>
               <div className="space-x-4">
                 <Button>Book a Table</Button>
-                <Button variant="outline">View Menu</Button>
+                <Button variant="outline" className="bg-green-500 text-white">View Menu</Button>
               </div>
             </div>
          
